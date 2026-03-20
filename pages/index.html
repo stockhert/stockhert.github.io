@@ -5,37 +5,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../res/stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../res/stylesheet.css">
+
 </head>
 
 
 <body>
-    <div id="logo"  class="d-flex justify-content-center">
-        <p>ABC</p>
-    </div>
-    <nav>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../pages/about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../pages/gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../pages/user.html">User</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../pages/support.html">Support</a>
-            </li>
-        </ul>
-    </nav>
+<div class="container nav navbar navbar-expand-lg navbar-light col-12">
+    <a class="nav-link" href="../pages/index.html">home</a>
+    <a class="nav-link" href="../pages/about.html">about</a>
+    <a class="nav-link" href="../pages/gallery.html">gallery</a>
+    <a class="nav-link" href="../pages/support.html">support</a>
+    <a class="nav-link" href="../pages/user.html">membership</a>
+</div>
 
-    <div style="padding: 20px; margin: 100px;" class="rounded-3 border border-2 border-dark d-flex justify-content-center">
-        <h1>booking placeholder</h1>
+<div class="container">
+    <div id="mainLogo" class="col-12">
+        damascus airlines
     </div>
+</div>
+
+<div id="bookingPanel">
+    book a flight
+    <div class="d-flex flex-row gap-3">
+        <div class="input-group">
+            <label for="from">from</label>
+            <input type="text" id="from" autocomplete="off" placeholder="from..">
+            <ul id="fromList" class="dropdown"></ul>
+        </div>
+        <div class="input-group">
+            <label for="to">to</label>
+            <input type="text" id="to" autocomplete="off" placeholder="to..">
+            <ul id="toList" class="dropdown"></ul>
+        </div>
+    </div>
+    <button type="submit" id="searchBtn">search</button>
+</div>
+
+<div id="indexInformation" style="margin-top: 50px">
+    <h2 class="important">
+        why us?
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.
+    </p>
+</div>
+
+<footer class="text-center footer">
+    <p>Copyright &copy; 2024 <span class="important">Damascus Airlines AB</span> No rights reserved.</p>
+</footer>
+<script src="../res/scripts/dropdownHandler.js"></script>
 </body>
+
+
 </html>
