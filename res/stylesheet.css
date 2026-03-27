@@ -213,6 +213,61 @@ button:hover{
 .galleryGrid .caption{
 }
 
+/* Membership */
+
+.membershipContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border : 2px solid var(--primaryColor);
+    border-radius: 7px;
+}
+
+.memberInfoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 275px;
+    width: 225px;
+    margin: 25px;
+
+    border: 2px solid var(--primaryColor);
+    border-radius: 7px;
+    transition: var(--transitiionTimerMedium) ease-in-out;
+}
+.memberInfoCard:hover{
+    scale: 1.05;
+    transition: var(--transitiionTimerShort) ease-in-out;
+}
+
+.memberInfoCardHeader{
+    padding: 10px;
+    color: var(--tertiaryColor);
+}
+
+
+#signUpBtn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    background-color: var(--secondaryColor);
+    color: white;
+    padding: 20px 100px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: var(--transitiionTimerShort) ease-in-out;
+}
+
+#signUpBtn:hover{
+    scale: 1.05;
+}
+
 /* Footer */
 footer{
     color: var(--tertiaryColor);
