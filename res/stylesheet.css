@@ -184,6 +184,34 @@ button:hover{
 
 }
 
+/* Gallery/Carousel */
+.galleryGrid *{
+    transition: var(--transitiionTimerMedium) ease-in-out;
+}
+.galleryGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.galleryGrid img{
+
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    border: 2px solid var(--primaryColor);
+    border-radius: 7px;
+}
+.galleryItem{
+    display: flex;
+    flex-direction: column;
+}
+
+.galleryGrid img:hover{
+    scale: 1.05;
+}
+
+.galleryGrid .caption{
+}
 
 /* Footer */
 footer{
