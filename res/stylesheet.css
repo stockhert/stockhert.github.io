@@ -267,7 +267,11 @@ button:hover{
     pointer-events: none;
     z-index: 1;
 
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.7) 70%);
+    background: linear-gradient(to bottom,
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.2) 40%,
+        rgba(0,0,0,0.7) 70%
+    );
 }
 
 .bgImg{
@@ -299,7 +303,34 @@ button:hover{
 }
 
 /* About */
+#aboutGrids{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 10px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutGridPanel{
+    align-items: center;
+    gap: 20px;
+    padding: 35px;
 
+    color: var(--tertiaryColor);
+    border: 2px solid var(--primaryColor);
+    border-radius: 7px;
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Support */
+#supportFormula{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Footer */
 footer{
@@ -310,3 +341,29 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+@media (max-width: 768px) {
+    /* Booking panel */
+    #bookingPanel{
+        width: 90%;
+    }
+
+    /* Gallery/Carousel */
+    .galleryGrid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Membership */
+    .membershipContainer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    /* About */
+    #aboutGrids{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+}
+
